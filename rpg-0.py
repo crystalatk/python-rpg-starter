@@ -1,11 +1,11 @@
-"""
-In this simple RPG game, the hero fights the goblin. He has the options to:
+# """
+# In this simple RPG game, the hero fights the goblin. He has the options to:
 
-1. fight goblin
-2. do nothing - in which case the goblin will attack him anyway
-3. flee
+# 1. fight goblin
+# 2. do nothing - in which case the goblin will attack him anyway
+# 3. flee
 
-"""
+# """
 
 def main():
     hero_health = 10
@@ -15,7 +15,8 @@ def main():
 
     while goblin_health > 0 and hero_health > 0:
         print("You have %d health and %d power." % (hero_health, hero_power))
-        print("The goblin has %d health and %d power." % (goblin_health, goblin_power))
+        print("The goblin has %d health and %d power." %
+              (goblin_health, goblin_power))
         print()
         print("What do you want to do?")
         print("1. fight goblin")
@@ -43,5 +44,6 @@ def main():
             print("The goblin does %d damage to you." % goblin_power)
             if hero_health <= 0:
                 print("You are dead.")
+
 
 main()
