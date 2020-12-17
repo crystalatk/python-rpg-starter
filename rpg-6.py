@@ -28,7 +28,7 @@ class Hero(Character):
 
 
 class Goblin(Character):
-    def __init__(self, health=6, power=2):
+    def __init__(self):
         super().__init__(6, 2)
 
     def attack(self, enemy):
